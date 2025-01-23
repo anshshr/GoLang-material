@@ -16,7 +16,7 @@ func main() {
 	var marks = [5]float32{2.34, 45.46 , 75.68,28.68}
 	fmt.Println(marks);
 
-	// if we do not declare with any values  then if will give defau;t values according to the data types as follows
+	// if we do not declare with any values  then if will give default values according to the data types as follows
 	// int - 0
 	// float32 - 0
 	// boolean - false
