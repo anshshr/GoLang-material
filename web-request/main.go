@@ -28,23 +28,22 @@ func main() {
 
 	// leraning about the urls (go lang provides a url package to exatrct and modify different parts of the url)
 
-	myURL := "https://example.com/to/your/path?key1=value1,key2=value2";
+	myURL := "https://example.com/to/your/path?key1=value1,key2=value2"
 
-	parsed_url , err := url.Parse(myURL);
+	parsed_url, err := url.Parse(myURL)
 
-	if err != nil{
-		fmt.Println("error fething the url" , err);
-		return;
+	if err != nil {
+		fmt.Println("error fething the url", err)
+		return
 	}
 
-	fmt.Println(parsed_url.Path) // path of the url
-	fmt.Println(parsed_url.Host) // host name of the url
+	fmt.Println(parsed_url.Path)     // path of the url
+	fmt.Println(parsed_url.Host)     // host name of the url
 	fmt.Println(parsed_url.RawQuery) // query string of the url
-	fmt.Println(parsed_url.Scheme)	// scheme of the url
-
+	fmt.Println(parsed_url.Scheme)   // scheme of the url
 
 	// modifying the url
-	parsed_url.Path = "newpath";
+	parsed_url.Path = "newpath"
 	parsed_url.Scheme = "www"
 
 	new_string := parsed_url.String()

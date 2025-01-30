@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// lightweigh data interchange format between multiple programming langauges
+// lightweight data interchange format between multiple programming langauges
 
 // marshalling - converting into json format
 // unmarshalling - converting json back into the original form
@@ -33,7 +33,6 @@ func main() {
 	}
 
 	fmt.Println(string(p1_data));
-
 
 	/// unmarhsalling the data
 
